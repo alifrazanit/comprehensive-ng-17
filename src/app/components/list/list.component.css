@@ -1,0 +1,34 @@
+.list-data{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+}
+.list-data .list-item{
+    display: flex;
+    flex-flow: row;
+}
+.list-data .list-item .item{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    align-items: center;
+}
+.list-data .list-item .item img{
+    width: 15rem;
+    height: 8rem;
+    object-fit: cover;
+}
+.list-data .list-item .item .description{
+    display: flex;
+    align-items: start;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 8rem;
+}
+
+.list-data .list-item .item .description h1,
+.list-data .list-item .item .description h2 {
+    margin: 0;
+    padding: 0;
+}

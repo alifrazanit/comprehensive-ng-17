@@ -1,0 +1,8 @@
+<button (click)="getRow()">Fetch Data</button>
+@defer (when isLoaded){
+    @for(product of listProducts;track product.id){
+        <app-list [item]="product" />
+    }
+} @placeholder {
+    <h1>The component is not loaded yet.</h1>
+}
